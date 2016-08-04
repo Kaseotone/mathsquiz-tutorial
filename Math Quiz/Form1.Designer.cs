@@ -61,6 +61,7 @@
             // 
             // timeLabel
             // 
+            this.timeLabel.BackColor = System.Drawing.Color.White;
             this.timeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeLabel.Location = new System.Drawing.Point(272, 9);
@@ -86,6 +87,7 @@
             this.plusLeftLabel.Size = new System.Drawing.Size(60, 50);
             this.plusLeftLabel.TabIndex = 2;
             this.plusLeftLabel.Text = "?";
+            this.plusLeftLabel.Click += new System.EventHandler(this.plusLeftLabel_Click);
             // 
             // label2
             // 
@@ -103,6 +105,7 @@
             this.plusRightLabel.Size = new System.Drawing.Size(60, 50);
             this.plusRightLabel.TabIndex = 4;
             this.plusRightLabel.Text = "?";
+            this.plusRightLabel.Click += new System.EventHandler(this.plusRightLabel_Click);
             // 
             // label4
             // 
@@ -135,6 +138,7 @@
             this.label3.Size = new System.Drawing.Size(60, 50);
             this.label3.TabIndex = 10;
             this.label3.Text = "=";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // minusRightLabel
             // 
@@ -143,6 +147,7 @@
             this.minusRightLabel.Size = new System.Drawing.Size(60, 50);
             this.minusRightLabel.TabIndex = 9;
             this.minusRightLabel.Text = "?";
+            this.minusRightLabel.Click += new System.EventHandler(this.minusRightLabel_Click);
             // 
             // label6
             // 
@@ -151,6 +156,7 @@
             this.label6.Size = new System.Drawing.Size(60, 50);
             this.label6.TabIndex = 8;
             this.label6.Text = "-";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // minusLeftLabel
             // 
@@ -159,6 +165,7 @@
             this.minusLeftLabel.Size = new System.Drawing.Size(60, 50);
             this.minusLeftLabel.TabIndex = 7;
             this.minusLeftLabel.Text = "?";
+            this.minusLeftLabel.Click += new System.EventHandler(this.minusLeftLabel_Click);
             // 
             // product
             // 
@@ -176,6 +183,7 @@
             this.label8.Size = new System.Drawing.Size(60, 50);
             this.label8.TabIndex = 15;
             this.label8.Text = "=";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // timesRightLabel
             // 
@@ -202,6 +210,7 @@
             this.timesLeftLabel.Size = new System.Drawing.Size(60, 50);
             this.timesLeftLabel.TabIndex = 12;
             this.timesLeftLabel.Text = "?";
+            this.timesLeftLabel.Click += new System.EventHandler(this.timesLeftLabel_Click);
             // 
             // quotient
             // 
@@ -218,6 +227,7 @@
             this.label12.Size = new System.Drawing.Size(60, 50);
             this.label12.TabIndex = 20;
             this.label12.Text = "=";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // divideRightLabel
             // 
@@ -235,6 +245,7 @@
             this.label14.Size = new System.Drawing.Size(60, 50);
             this.label14.TabIndex = 18;
             this.label14.Text = "÷";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // divideLeftLabel
             // 
@@ -243,6 +254,7 @@
             this.divideLeftLabel.Size = new System.Drawing.Size(60, 50);
             this.divideLeftLabel.TabIndex = 17;
             this.divideLeftLabel.Text = "?";
+            this.divideLeftLabel.Click += new System.EventHandler(this.divideLeftLabel_Click);
             // 
             // startButton
             // 
@@ -293,6 +305,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Maths Quiz";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).EndInit();

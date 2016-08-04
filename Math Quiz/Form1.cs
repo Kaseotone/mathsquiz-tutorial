@@ -46,6 +46,7 @@ namespace Math_Quiz
         /// </summary>
         public void StartTheQuiz()
         {
+            timeLabel.BackColor = Color.White;
             // Fill in the addition problem.
             // Generate two random numbers to add.
             // Store the values in the variables 'addend1' and 'addend2'.
@@ -90,7 +91,10 @@ namespace Math_Quiz
             timeLabel.Text = "30 seconds";
             timer1.Start();
         }
+        public void TimerSkip()
+        {
 
+        }
         /// <summary>
         /// Check the answer to see if the user got everything right.
         /// </summary>
@@ -149,6 +153,17 @@ namespace Math_Quiz
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //changes bg label color if it goes
+            //under 6 seconds.
+            if (timeLeft < 7)
+            {
+                timeLabel.BackColor = Color.Red;
+            }
+            else
+            {
+                timeLabel.BackColor = Color.White;
+            }
+
             if (CheckTheAnswer())
             {
                 // If CheckTheAnswer() returns true, then the user 
@@ -157,11 +172,6 @@ namespace Math_Quiz
                 timer1.Stop();
                 MessageBox.Show("You got all the answers right!", "Congratulations!");
                 startButton.Enabled = true;
-                timeLabel.BackColor = Color.White;
-            }
-            else if (timeLeft < 5)
-            {
-                timeLabel.BackColor = Color.Red;
             }
             else if (timeLeft > 0)
             {
@@ -184,7 +194,7 @@ namespace Math_Quiz
                 product.Value = multiplicand * multiplier;
                 quotient.Value = dividend / divisor;
                 startButton.Enabled = true;
-                timeLabel.BackColor = Color.White;
+                
             }
         }
 
@@ -198,6 +208,66 @@ namespace Math_Quiz
                 int lengthOfAnswer = answerBox.Value.ToString().Length;
                 answerBox.Select(0, lengthOfAnswer);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void divideLeftLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timesLeftLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minusRightLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minusLeftLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void plusRightLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void plusLeftLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

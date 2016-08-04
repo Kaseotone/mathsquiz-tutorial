@@ -1,0 +1,9 @@
+c:\users\xboxm\documents\visual studio 2015\Projects\Math Quiz\Math Quiz\bin\Release\Math Quiz.exe.config
+c:\users\xboxm\documents\visual studio 2015\Projects\Math Quiz\Math Quiz\bin\Release\Math Quiz.exe
+c:\users\xboxm\documents\visual studio 2015\Projects\Math Quiz\Math Quiz\bin\Release\Math Quiz.pdb
+c:\users\xboxm\documents\visual studio 2015\Projects\Math Quiz\Math Quiz\obj\Release\Math_Quiz.Form1.resources
+c:\users\xboxm\documents\visual studio 2015\Projects\Math Quiz\Math Quiz\obj\Release\Math_Quiz.Properties.Resources.resources
+c:\users\xboxm\documents\visual studio 2015\Projects\Math Quiz\Math Quiz\obj\Release\Math Quiz.csproj.GenerateResource.Cache
+c:\users\xboxm\documents\visual studio 2015\Projects\Math Quiz\Math Quiz\obj\Release\Math Quiz.exe
+c:\users\xboxm\documents\visual studio 2015\Projects\Math Quiz\Math Quiz\obj\Release\Math Quiz.pdb
+c:\users\xboxm\documents\visual studio 2015\Projects\Math Quiz\Math Quiz\obj\Release\Math Quiz.csprojResolveAssemblyReference.cache
